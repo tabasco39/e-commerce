@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [mainController::class,'index'] );
 Route::get('show/{id}',[mainController::class,'show'])->name('show');
+Route::get('categories',[mainController::class,'viewCategory']);
 
